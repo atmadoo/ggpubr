@@ -100,7 +100,7 @@ StatCor<- ggproto("StatCor", Stat,
   pval <- .cor$p.value
   pvaltxt <- ifelse(pval < 2.2e-16, "p < 2.2e-16",
                     paste("p =", signif(pval, 2)))
-  cortxt <- paste0("r = ", signif(.cor$estimate, 2),
+  cortxt <- paste0("rs = ", signif(.cor$estimate, 2),
                    label.sep,  pvaltxt)
   z$label <- cortxt
   z
